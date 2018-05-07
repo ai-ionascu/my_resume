@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/*--------------------------------------------------Colors--------------------------------------------------------------------------------------------------*/
+
+.bg--color--heading{
+    background-color: #676767;
+}
+
+.home--color{
+    background-color: #e67e22;
+}
+
+.resume--color{
+    background-color: #9b59b6;
+}
+.contact--color{
+    background-color: #3498db;
+}
+.download--color{
+    background-color: #525252;
+}
+
+.bg-personal-info{
+    background-color: #e7e7e7;
+}
+/*--------------------------------------------------Special paddings/margins/texts--------------------------------------------------------------------------------------------------*/
+
+h1,h2,h3,h4{
+    margin: 0;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.general--sub{
+    font-family: 'Exo';
+    font-weight: 300;
+    color: #fafafa;
+}
+/*--------------------------------------------------Header--------------------------------------------------------------------------------------------------*/
+
+
+header{
+    margin:0;
+    padding: 0;
+}
+.heading--area{
+height: 240px;    
+}
+
+.logo{
+    background-image: url('/assets/images/photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .2s ease-in-out;
+}
+
+.name{
+    font-family: 'Exo';
+    font-weight: 100;
+    /*font-size: 46px;*/
+    color: #ffffff;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-weight: 200;
+    /*font-size: 28px;*/
+    color: #ffffff;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.menuitem{
+    height: 120px;
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size: 26px;
+}
+
+.menuitem a{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+.menuitem a:hover{
+    text-decoration: none;
+}
+
+.menuitem a span{
+    display: block;
+    width: 100%;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fafafa;
+    
+}
+
+.menuitem a i{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fafafa;
+}
+
+/*--------------------------------------------------Footer--------------------------------------------------------------------------------------------------*/
+
+footer{
+    min-height: 120px;
+}
+
+#footer--details{
+    background-color: #525252;
+    color: #fafafa;
+    padding: 20px;
+}
+
+footer .social-links li{
+display: inline-block;  
+}
+
+footer .cv-pdf i{
+    color: #fafafa;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+footer .cv-pdf i:hover{
+    color: #e84610;
+    transition:all .35s ease-in-out;
+}
+
+ul.social-links li a i{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fafafa;
+    background-color: #8f8f8f;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7.5px;
+    transition:all .35s ease-in-out;
+    
+}
+
+ul.social-links li a i:hover{
+    background-color: #e84610;
+    transition:all .35s ease-in-out;
+    
+}
+
+/*--------------------------------------------------Section--------------------------------------------------------------------------------------------------*/
+
+.section-heading{
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin: 30px;
+}
+
+.reasons-heading{
+    margin-bottom:30px;
+    vertical-align: top;
+}
+.reasons-icon{
+    color: #e84610;
+}
+
+/*--------------------------------------------------Hover.css--------------------------------------------------------------------------------------------------*/
+
+.hvr-sweep-to-bottom::before{
+    background: rgba(0,0,0,0.2) !important;
+}
