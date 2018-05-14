@@ -287,6 +287,33 @@ ul.social-links li a i:hover{
     color: #fafafa;
 }
 
+/*--------------------------------------------------Contact--------------------------------------------------------------------------------------------------*/
+
+.contact-heading{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+}
+
+.center-form{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+button[type="submit"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #e67e22;
+    color: #fafafa;
+    border-radius: 25px;
+}
+
+button[type="submit"]:hover {
+    background-color: #cd6000;
+    color: #ffffff;
+}
 /*--------------------------------------------------Hover.css--------------------------------------------------------------------------------------------------*/
 
 .hvr-sweep-to-bottom::before{
