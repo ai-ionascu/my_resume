@@ -20,7 +20,12 @@
 .download--color{
     background-color: #525252;
 }
-
+.interests--color{
+    background-color: red;
+}
+.git--color{
+    background-color: darkblue;
+}
 .bg-personal-info{
     background-color: #e7e7e7;
 }
@@ -50,7 +55,7 @@ height: 240px;
 }
 
 .logo{
-    background-image: url(/my_resume/assets/images/face.jpg);
+    background-image: url(/assets/images/face.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
