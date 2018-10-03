@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_kBJhsBVxyP7ZDBC109a4P");
+        })();
+    </script>
     </head>
     
     <body>
@@ -63,7 +69,7 @@
                     <h5 class="uppercase text-center">Let's work together</h5>
                 </div>
                 <div class="center-form">
-                    <form class="text-center">
+                    <form onsubmit= "return sendMail(this)" method="POST" class="text-center">
                         <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                         <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                         <textarea name="projectsummary" class="form-control" id="projectsummary" rows="5" placeholder="Project Description"></textarea>
@@ -116,5 +122,6 @@
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPB-7iSYMpTylZRkpobRSnFEV0p427U7c&callback=initMap"></script>
         <script src="assets/js/maps.js"></script>
+        <script src="assets/js/sendEmail.js"></script>
     </body>
 </html>
