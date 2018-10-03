@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My resume</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+    </head>
+    
+    <body>
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a class="home--link" href="index.html">
+                            <div class="row logo"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row heading--area bg--color--heading">
+                            <div class="heading">
+                                <h1 class="name">Augustin Ionut Ionascu</h1>
+                                <h2 class="title">Full Stack Web Developer</h2>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <ul class="d-flex flex-wrap list-inline w-100 mb-0">
+                                <li class="col-6 col-md-2 home--color menuitem">
+                                    <a class="hvr-sweep-to-bottom" href="index.html"><i class="fa fa-home" aria-hidden:"true"></i><span>Home</span></a>
+                                </li>
+                                <li class="col-6 col-md-2 resume--color menuitem">
+                                    <a class="hvr-sweep-to-bottom" href="resume.html"><i class="fa fa-graduation-cap" aria-hidden:"true"></i><span>Resume</span></a>
+                                </li>
+                                <li class="col-6 col-md-2 contact--color menuitem">
+                                    <a class="hvr-sweep-to-bottom" href="contact.html"><i class="fa fa-phone" aria-hidden:"true"></i><span>Contact</span></a>
+                                </li>
+                                <li class="col-6 col-md-2 interests--color menuitem">
+                                    <a class="hvr-sweep-to-bottom" href="interests.html"><i class="fas fa-child" aria-hidden:"true"></i><span>Interests</span></a>
+                                </li>
+                                <li class="col-6 col-md-2 git--color menuitem">
+                                    <a class="hvr-sweep-to-bottom" href="git.html"><i class="fab fa-github" aria-hidden:"true"></i><span>Github</span></a>
+                                </li>
+                                <li class="col-6 col-md-2 download--color menuitem">
+                                    <a class="hvr-sweep-to-bottom" href="assets/cv/CV_EN_Ionut_Ionascu.pdf" target=_blank""><i class="fa fa-download" aria-hidden:"true"></i><span>Download</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+            
+        <section class="container-fluid">
+            <div class="row bg-color-contact">
+                <div class="w-100">
+                    <h3 class="contact-heading uppercase text-center">View my GitHub projects</h3>
+                    <h5 class="uppercase text-center">You can also search on other user profiles</h5>
+                </div>
+                <div class="center-form">
+                    <input type="text" id="gh-username" value="octocat" oninput="fetchGitHubInformation()"/>
+                    <div id="gh-user-data"></div>
+                    <div id="gh-repo-data"></div>   
+                </div>
+            </div>
+            
+        </section>
+            
+        <footer>
+            <div id="footer--details" class="row">
+                <div class="col-sm-4">
+                    <h5 class="uppercase general--sub">About</h5>
+                    <p>
+                        Full stack web developer. Skilled in everything from HTML to Heroku. The capacity for structural and design thinking.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="uppercase general--sub">Download my CV</h5>
+                        <p>Need a printable version of my CV? <br> Download it here:
+                            <a class="cv-pdf" href="assets/cv/CV_EN_Ionut_Ionascu.pdf" target="_blank"><i class="fa fa-download" aria-hidden:"true"></i></a>
+                        </p>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="uppercase general--sub">Social</h5>
+                    <ul class="list-inline social-links">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/augustin-ionut-ionascu/"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/js/github-info.js"></script>
+    </body>
+</html>
