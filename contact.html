@@ -68,12 +68,13 @@
                     <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
                     <h5 class="uppercase text-center">Let's work together</h5>
                 </div>
-                <div class="center-form">
+                <div class="center-form" id="contact-form">
                     <form onsubmit= "return sendMail(this)" method="POST" class="text-center">
                         <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                         <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                         <textarea name="projectsummary" class="form-control" id="projectsummary" rows="5" placeholder="Project Description"></textarea>
-                        <button type="submit" class="btn">Submit Project Request</button>
+                        <button type="submit" class="btn" id="btn-submit">Submit Project Request</button>
+                        <div id="messages"></div>
                     </form>
                 </div>
             </div>
